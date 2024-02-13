@@ -1,0 +1,16 @@
+{
+    "cities": [
+        {
+            "name": "London",
+            "country": "United Kingdom"
+        },
+        {
+            "name": "New York",
+            "country": "United States"
+        },
+        {
+            "name": "Paris",
+            "country": "France"
+        }
+    ]
+}

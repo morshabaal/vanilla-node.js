@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vanilla Node.js website">
+    <meta name="description" content="This is a vanilla Node.js web application!">
+    <meta name="author" content="John Doe">
+
+    <!-- Stylesheet and favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Title -->
+    <title>Vanilla Node.js</title>
+</head>
+<body>
+    <header>
+        <a href="/"><h1>Vanilla Node.js</h1></a>
+        <p>As the title suggests, this web application is made using barebones, vanilla Node.js. No third-party packages included.</p>
+
+        <p>See the <a href="/about">about page</a> for a regular HTML page (no CSS/JS).</p>
+        <p>See the <a href="/api">API page</a> for a simple JSON response.</p>
+    </header>
+
+    <main id="loginSection">
+        <p>Below, you are able to authenticate to a user account.</p>
+        <form name="loginForm" action="/login" method="post">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <button type="submit">Login!</button>
+        </form>
+
+        <div id="status"></div>
+    </main>
+
+    <hr>
+
+    <p>Your nonce is: <span class="nonce">{{ nonce }}</span></p>
+    <p>The nonce is a unique value generated on the backend for each request. It allows the website to use inline CSS, JavaScript, etc.</p>
+
+    <hr>
+
+    <p class="gazpacho">This text is written in a custom font.</p>
+
+    <hr>
+
+    <p>Here is a SVG image: <img src="/images/image.svg" alt="SVG image"></p>
+    <p>Here is a PNG image: <img src="/images/image.png" alt="PNG image"></p>
+    <p>Here is a JPG image: <img src="/images/image.jpg" alt="JPG image"></p>
+    <p>Here is a WebP image: <img src="/images/image.webp" alt="WebP image"></p>
+    <p>Here is an AVIF image: <img src="/images/image.avif" alt="AVIF image"></p>
+
+    <!-- JavaScript -->
+    <script src="/script.js" nonce="{{ nonce }}"></script>
+</body>
+</html>
