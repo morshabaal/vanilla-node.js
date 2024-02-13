@@ -1,0 +1,49 @@
+body {
+    background-color: lightblue;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+.nonce {
+    font-family: monospace;
+    font-weight: 700;
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+main {
+    background-color: lightgray;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1rem;
+    max-width: 25rem;
+}
+
+form label {
+    display: block;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    height: 2rem;
+    padding: 0 0.5rem;
+}
+
+form button {
+    display: block;
+    margin: 1rem 0;
+    height: 2rem;
+    width: 5rem;
+}
+
+@font-face {
+    font-family: "Gazpacho";
+    src: url("/gazpacho-regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.gazpacho {
+    font-family: "Gazpacho";
+    font-weight: 700;
+    font-size: 2rem;
+}
